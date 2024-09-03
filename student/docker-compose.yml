@@ -1,5 +1,5 @@
   databasefirst:        #naming convention for container
-    build: /opt/student-docker-by-ip/Mysql/  #location of the docker file
+    build: /opt/dockercompose_st_emp/student/Mysql/  #location of the docker file
     ports:     #port mapping my container to host port 
       - '3306:3306'  
     container_name: Database  #providing name to container
@@ -7,7 +7,7 @@
         bridge
 
   backendsecond: 
-    build: /opt/student-docker-by-ip/backend/    
+    build: /opt/dockercompose_st_emp/student/backend/    
     ports:
       - '8080:8080'        
     container_name: Backend
@@ -15,7 +15,7 @@
         bridge
 
   frontendthrid:
-    build:  /opt/student-docker-by-ip/frontend/
+    build:  /opt/dockercompose_st_emp/student/frontend/
     ports:
       - '80:80'
     container_name: Frontend

@@ -22,3 +22,28 @@ services:          #default synxtax
     container_name: Frontend
     network_mode:
         bridge
+
+    employeepsqldatabase:
+    build:  /opt/dockercompose_st_emp/Employee/psql-database/
+    ports:
+      - '5432:5432'
+    container_name: database
+    network_mode:
+        bridge
+
+
+    employeeback:
+    build:  /opt/dockercompose_st_emp/Employee/backend/
+    ports:
+      - '8081:8080'
+    container_name: Back
+    network_mode:
+        bridge
+
+    employeepsqldatabase:
+    build:  /opt/dockercompose_st_emp/Employee/frontend/
+    ports:
+      - '3000:3000'
+    container_name: frontend
+    network_mode:
+        bridge

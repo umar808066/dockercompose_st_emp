@@ -23,7 +23,7 @@ services:          #default synxtax
     network_mode:
         bridge
 
-  employeepsqldatabase:
+  employeedata:
     build:  /opt/dockercompose_st_emp/Employee/psql-database/
     ports:
       - '5432:5432'

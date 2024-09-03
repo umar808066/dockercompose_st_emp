@@ -21,4 +21,4 @@ services:          #default synxtax
       - '80:80'
     container_name: Frontend
     network_mode:
-        bridge
+        bridge

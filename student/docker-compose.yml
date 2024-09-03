@@ -1,3 +1,4 @@
+services:          #default synxtax
   databasefirst:        #naming convention for container
     build: /opt/dockercompose_st_emp/student/Mysql/  #location of the docker file
     ports:     #port mapping my container to host port 
